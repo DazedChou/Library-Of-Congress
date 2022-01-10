@@ -10,9 +10,9 @@ $('#submit').on("click", function (event) {
     var requestUrl = 'https://www.loc.gov/' + format + '/?q=' + search + '&fo=json';
 
     if(!format){
-        document.location.replace('./search-page.html/?q='+search)
+        document.location.replace('./search-page.html?q='+search)
     }else if(format){
-        document.location.replace('./search-page.html/?q='+search+'format='+format);
+        document.location.replace('./search-page.html?q='+search+'&format='+format);
     }
 })
 
